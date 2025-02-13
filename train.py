@@ -29,6 +29,6 @@ for epoch in range(epochs):
     if epoch % 10 == 0:
         print(f"Epoch {epoch}, Loss: {loss.item():.4f}")
 
-# Save trained model
+# Save trained model (Model saved to house_price_model.pth)
 torch.save(model.state_dict(), "house_price_model.pth")
 print("Model saved!")
